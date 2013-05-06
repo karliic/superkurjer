@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SuperKurjers</title>
+  <%= stylesheet_link_tag    "ase", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body >
+	<div id="wrapper">
+	     <div id="header">
+		<div class="login">
+		     <% if session[:user_id] or session[:admin_id] or session[:company_id] %>
+		 <b> Hello,  <%= session[:username]%> !</b>
+			<div class="logout"> <%= link_to("Iziet",:controller => 'application', :action => 'logout') %></div> 
+		    <% end %>
+		  <% if !(session[:user_id] or  session[:admin_id] or session[:company_id]) %>
+		 	<%= link_to "Register company", :controller => 'companies', :action => 'new' %>
+			 <%= link_to "Register as courier", :controller => 'users', :action => 'new'%>
+			<%= form_tag(:action => 'attempt_login') do %>
+		  <table>
+		    <tr>
+		      <td >Lietotājvārds: <%= text_field_tag(:username) %>
+		      Parole: <%= password_field_tag(:password) %> 
+		       <%= submit_tag("Log In") %></td>
+		   </tr>
+		  
+		   
+		  
+		     
+		    
+		  </table>
+		 
+		  <% end %>		
+		  <% end %>
+		  
+		  <nav class="navigation">
+		
+		</nav>		
+	
+	</div>
+	</div>
+ 	
+	<div id="sidebar">
+			
+	</div>	
+ 	<div id="content">
+
+		<%= yield %>
+		
+ 	</div>
+ </div>
+
+</div>
+</body>
+</html>

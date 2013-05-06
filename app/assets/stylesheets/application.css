@@ -1,0 +1,148 @@
+
+body {
+	background-image: url("bg.jpg");
+	background-size: 100% 100%;
+}
+
+#wrapper{
+	
+	width: 1024px;
+	background:;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#header{
+	height: 100px;
+	background-image: url("bg.jpg");
+	border-top-right-radius: 20px;
+}
+
+#header td, th{
+	background-color:black;
+	color:white;
+}
+
+#header b{
+	color:white;
+}
+
+.login td, th {
+	background: transparent;
+}
+
+#header nav, a{
+	color:white;
+	text-decoration: none;
+	font-size: 120%;	
+}
+.logout a {
+	color:red;
+}
+
+.navigation {
+	position: absolute;
+	
+	margin-left: 260px;
+	margin-top: 10px;
+}
+.navigation a {
+	text-align:center;
+	padding-left: 15px;
+	padding-right: 15px;
+	background: rgba(128,0,0,0.2);
+	border-radius:5px;
+	
+}
+.navigation a:hover {
+	background-color:rgba(128,0,0,0.8);
+}
+.navigation a:active{
+	background-color:rgba(128,0,0,0.8);
+}
+#content{
+	min-height:500px;
+	float: right;
+	width: 75%;
+	background: rgba(0,0,0,0.4);
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	
+	
+}
+#content form, h3, h2, h1, p{
+	color:white;
+}
+
+#content a {
+	
+	font-size: 100%;
+	color:silver;
+	font-weight:bold;
+	
+}
+
+#content img {
+	
+	
+}
+
+#main-content {
+	margin: 20px;
+	width:;
+	min-height:300px;
+	background:rgba(192,192,192,0.3);
+	
+}
+#main-content img {
+	float: left;
+	margin: 10px;
+}
+#main-content table, td{
+	float: left;
+	width:100%;
+	background:silver;
+	color:black;
+}
+#main-content tr{
+	
+	background-color:black;
+}
+
+#main-content b{
+	color:black;
+	font-size:140%;
+}
+#main-content a{
+	color:black;
+	font-weight: bold;
+	
+}
+#main-content a:hover{
+	color:red;
+	
+}
+#sidebar{
+	float: left;
+	width:24%;
+	background: rgba(192,192,192,0.2);
+	min-height:500px;
+	border-radius: 20px;
+	border-bottom-left-radius: 20px;
+	
+}
+#sidebar strong, b{
+	position: relative;
+	left: 20px;
+	font-size:115%;
+	color:silver;
+	text-align: ;
+	
+}
+#sidebar table {
+	background:white;
+
+	margin: 6px;
+}

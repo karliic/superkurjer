@@ -1,0 +1,13 @@
+
+
+<h2></h2>
+
+  <%= form_for(:user, :url => {:action => 'update'}) do |f| %>
+  
+    <%= render(:partial => 'form', :locals => {:f => f}) %>
+    
+    <div class="form-buttons">
+      <%= submit_tag("Update") %>
+    </div>
+    
+  <% end %>

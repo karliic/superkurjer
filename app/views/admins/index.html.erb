@@ -1,0 +1,22 @@
+<h1>Listing users</h1>
+
+<%= link_to 'New User', :action => 'new'%>
+<table>
+  <tr>
+    <th>Username</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @admins.each do |admin| %>
+  <tr>
+  	<td><%= admin.username%></td>
+    <td><%= link_to 'Show',:controller => 'admins', :action => 'show', :id => admin.id %></td>
+    <td><%= link_to 'Edit' %></td>
+    <td><%= link_to 'Destroy'  %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
